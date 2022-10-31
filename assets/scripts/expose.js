@@ -6,7 +6,6 @@ function init() {
   const hornSelect = document.querySelector("#horn-select");
   const hornImg = document.querySelector("img");
   const hornAudio = document.querySelector("audio");
-
   hornSelect.addEventListener('change', (event) => {
     if (hornSelect.value == "air-horn") {
       hornImg.src = "assets/images/air-horn.svg"
@@ -22,7 +21,6 @@ function init() {
 
   const volume = document.getElementById("volume");
   const volumeImg = document.querySelector("div > img");
-
   volume.addEventListener('change', (event) => {
     if (volume.value == 0) {
       volumeImg.src = "assets/icons/volume-level-0.svg";
@@ -38,7 +36,6 @@ function init() {
 
   const button = document.querySelector("button");
   const jsConfetti = new JSConfetti();
-  
   button.addEventListener('click', (event) => {
     if (hornSelect.value == "party-horn") {
       jsConfetti.addConfetti();
